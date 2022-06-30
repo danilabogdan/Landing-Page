@@ -1,0 +1,282 @@
+:root
+{
+    --bg-clr-dark: #1f2937;
+    --btn-clr:#3882f6;
+    --hero-txt: #f9faf8;
+    --hero-second-txt:#e5e7eb;
+    --info-txt: #1f2937;
+    --quote-bg: #e5e7eb;
+    --quote-txt: #1f2937;
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style-type: none;
+}
+
+ul,
+ol,
+li
+{
+    list-style:none ;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body
+{
+    background-color: var(--bg-clr-dark);
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    margin-bottom: 60px;
+}
+
+.logo 
+{
+    font-size: 24px;
+    color: #f9faf8;
+    margin-left: 50px;
+    margin-top: 24px;
+}
+
+.navright
+{
+    display: flex;
+    flex-direction: row;
+}
+
+ul 
+{
+    display: flex;
+    margin-right: 24px;
+    
+}
+
+a
+{
+    color: var(--hero-txt);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 24px;
+}
+
+
+.hero
+{
+    /* margin-top: 80px; */
+    background-color: var(--bg-clr-dark);
+    color: var(--hero-txt);
+    display:flex;
+    justify-content: space-around;
+}
+
+.hero p 
+{
+    width: 52ch;
+}
+
+
+.hero-right img 
+{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.hero-btn
+{
+    background-color: var(--btn-clr);
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: white;
+}
+
+img
+{
+width: 200px;
+
+}
+
+.container 
+{
+    background-color: var(--hero-txt)
+
+}
+
+.ctn-top h2
+{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.ctn-bot
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 250px;
+}
+
+.ctn-bot img
+{
+    border-radius: 10px;
+    border: 2px solid #3882f6;
+}
+.ctn-bot p 
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 200px;
+}
+.quote-section
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--quote-bg);
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+}
+
+.quote-section h4 
+{
+    align-self: flex-end;
+    margin-right: 450px;
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--quote-txt);
+    letter-spacing: 1px;
+}
+.h3-quote
+{
+    width: 100ch;
+    align-self: center;
+    
+}
+.pre-footer
+{
+    background-color: var(--hero-txt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.blue
+{
+    width: 550px;
+    height: 80px;
+    background-color: var(--btn-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-txt);
+    border-radius: 15px;
+}
+
+.blue button
+{
+    background-color: var(--btn-clr);
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 50px;
+    color: white;
+}
+
+
+footer
+{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-txt);
+}
